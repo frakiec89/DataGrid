@@ -19,16 +19,13 @@ namespace DataGrid
 
         private void btGo_Click(object sender, EventArgs e) // start
         {
-            dataGridView1.Columns.Add("y", "y");
-            dataGridView1.Columns.Add("x", "x");
-            dataGridView1.Columns.Add("step", "шаг");
+            var vs = GetData(100000, -1, 1);
 
-            var vs = GetData(10 , -1 ,1);
 
-            foreach ( var  item in  vs)
-            {
-                dataGridView1.Rows.Add(item.Y, item.X, item.Step);
-            }
+            dataGridView1.DataSource = vs; // источник данных ;
+
+            dataGridView1.Columns[2].HeaderText = "шаг";
+
 
         }
 
