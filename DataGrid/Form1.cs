@@ -32,9 +32,9 @@ namespace DataGrid
 
         }
 
-        private List <Masssiv> GetData (double step , double  xIn , double xEnd)
+        private List <Masssiv> GetData (double count , double  xIn , double xEnd)
         {
-            step = (xEnd - xIn) / step;
+            var  step = (xEnd - xIn) / count;
 
             List<Masssiv> vs = new List<Masssiv>();
 
