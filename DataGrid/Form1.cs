@@ -17,7 +17,7 @@ namespace DataGrid
             InitializeComponent();
         }
 
-        private void btGo_Click(object sender, EventArgs e)
+        private void btGo_Click(object sender, EventArgs e) // start
         {
             dataGridView1.Columns.Add("y", "y");
             dataGridView1.Columns.Add("x", "x");
