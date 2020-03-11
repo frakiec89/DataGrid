@@ -24,7 +24,7 @@ namespace DataGrid
 
             dataGridView1.DataSource = vs; // источник данных ;
 
-            dataGridView1.Columns[2].HeaderText = "шаг";
+            dataGridView1.Columns[2].HeaderText = Resource1.Step; 
 
 
         }
